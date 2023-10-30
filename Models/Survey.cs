@@ -12,6 +12,9 @@ namespace DojoSurveyWithValidations.Models
         [MinLength(2, ErrorMessage = "Name must be at least 2 characters long!")]
         public string Name {get; set;}
         [Required]
+        [FutureDate]
+        public DateTime Birthday {get; set;}
+        [Required]
         public string DojoLocation {get; set;}
         [Required]
         public string FavoriteLanguage {get; set;}

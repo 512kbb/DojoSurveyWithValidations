@@ -6,6 +6,10 @@
         <li class="list-group-item flex-fill">@Model.Name</li>
     </ul>
     <ul class="list-group list-group-horizontal">
+        <li class="list-group-item flex-fill">Birthday</li>
+        <li class="list-group-item flex-fill">@Model.Birthday.ToString("dd/MM/yyyy HH:mm")</li>
+    </ul>
+    <ul class="list-group list-group-horizontal">
         <li class="list-group-item flex-fill">Dojo Location:</li>
         <li class="list-group-item flex-fill">@Model.DojoLocation</li>
     </ul>

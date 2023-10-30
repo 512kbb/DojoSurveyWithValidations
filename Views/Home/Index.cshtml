@@ -10,6 +10,11 @@
         <span asp-validation-for="Name"></span>
     </div>
     <div class="mb-3">
+        <label asp-for="Birthday"></label>
+        <input asp-for="Birthday" type="datetime-local">
+        <span asp-validation-for="Birthday"></span>
+    </div>
+    <div class="mb-3">
         <label asp-for="DojoLocation">Dojo Location</label>
         <select asp-for="DojoLocation">
             <option value="San Jose">San Jose</option>
